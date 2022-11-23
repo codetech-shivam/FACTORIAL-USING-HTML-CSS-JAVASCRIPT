@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            display: inline-block;
+            margin-left: 100px;
+            
+        }
+        p{
+            color: red;
+            
+        }
+        #shivam:hover{
+        
+        }
+        #button{
+            color: red;
+            background-color: rgb(32, 18, 216);
+            text-align: center;
+            margin-left: 30px;
+        }
+        #button:hover{
+            background-color: aqua;
+            border: 2px solid green;
+        }
+        #print{
+            background-color: rgb(26, 30, 24);
+            display: inline-block;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 05px;
+        }
+        H1{
+            color: red;
+        }
+
+    </style>
+    <script>
+        function fact(){
+            var num;
+            var sum=1;
+            var p=document.getElementById('print');
+            num=Number(document.getElementById('shivam').value);
+            if(num<0){
+                p.innerHTML="please enter a positive value"
+            }
+            else if(num==0){
+                p.innerHTML=1;
+            }
+            else{
+            for(var i=1;i<=num;i++){
+                
+                sum=sum*i;
+                
+                
+                
+                
+            }
+            p.innerHTML="factorial is "+sum ;
+        }
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>SHIVAKANT SHUKLA </h1>
+    <div>
+    <p><input id="shivam" type="text" placeholder="enter a number"></p>
+    <p><input id="button" type="button" value="print factorial" onclick='fact()'></p>
+    <p id="print"></p>
+</div>
+    
+</body>
+</html>
