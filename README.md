@@ -1,2 +1,2 @@
 # factorial
-https://codetech-shivam.github.io/factorial/
+https://codetech-shivam.github.io/FACTORIAL-USING-HTML-CSS-JAVASCRIPT/
